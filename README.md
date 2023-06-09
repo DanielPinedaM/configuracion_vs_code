@@ -1,4 +1,4 @@
-# Configuración de VS Code - settings.json
+# Archivo settings.json para configurar Visual Studio Code
 
 ```javascript
 {

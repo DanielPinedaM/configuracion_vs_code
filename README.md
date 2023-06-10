@@ -46,6 +46,7 @@
     "editor.wordBasedSuggestions": true,
     "editor.parameterHints.enabled": true,
     "editor.suggest.preview": true,
+    "editor.linkedEditing": true,
 
     "emmet.includeLanguages": {
         "javascript": "javascriptreact",
@@ -173,7 +174,6 @@
     "liveServer.settings.donotShowInfoMsg": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "terminal.integrated.tabs.enabled": false,
-    "editor.linkedEditing": true,
     "editor.cursorSmoothCaretAnimation": "on",
     "headwind.prependCustomClasses": true,
     "workbench.activityBar.visible": false,

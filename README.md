@@ -85,6 +85,7 @@
     "editor.quickSuggestionsDelay": 1,
     "editor.renderWhitespace": "all",
     "editor.stickyScroll.enabled": true,
+    "workbench.tree.enableStickyScroll": true,
     "editor.suggest.preview": true,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "on",
@@ -92,7 +93,7 @@
     "editor.tokenColorCustomizations": {
         "comments": "#e67e22"
     },
-    "editor.wordBasedSuggestions": true,
+    "editor.wordBasedSuggestions": "matchingDocuments",
     "editor.wordBasedSuggestionsMode": "allDocuments",
     "emmet.includeLanguages": {
         "javascript": "javascriptreact",
@@ -138,8 +139,8 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "js/ts.implicitProjectConfig.checkJs": true,
     "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.sortImports": true,
+        "source.fixAll.eslint": "explicit",
+        "source.sortImports": "explicit"
     },
     "json.sortOnSave.enable": true,
     "liveServer.settings.donotShowInfoMsg": true,
@@ -185,7 +186,9 @@
     "workbench.colorTheme": "Material Theme Ocean High Contrast",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.activityBar.location": "hidden",
-    "window.zoomLevel": 1
+    "terminal.integrated.env.windows": {},
+    "console-ninja.featureSet": "Community",
+    "window.zoomLevel": 1,
 }
 ```
 

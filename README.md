@@ -2,6 +2,7 @@
 
 ```javascript
 {
+    /* Prettier: formateador de codigo */
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -29,6 +30,25 @@
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "prettier.arrowParens": "always",
+    "prettier.bracketSameLine": false,
+    "prettier.bracketSpacing": true,
+    "prettier.embeddedLanguageFormatting": "auto",
+    "prettier.htmlWhitespaceSensitivity": "css",
+    "prettier.insertPragma": false,
+    "prettier.jsxSingleQuote": true,
+    "prettier.printWidth": 100,
+    "prettier.proseWrap": "preserve",
+    "prettier.quoteProps": "as-needed",
+    "prettier.requirePragma": false,
+    "prettier.semi": true,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 2,
+    "prettier.trailingComma": "es5",
+    "prettier.useTabs": false,
+    "prettier.vueIndentScriptAndStyle": false,
+
+    /* code-runner: ejecutar codigo */
     "code-runner.executorMap": {
         "ahk": "autohotkey",
         "applescript": "osascript",
@@ -63,44 +83,87 @@
         "v": "v run",
         "vbscript": "cscript //Nologo"
     },
-    /* code-runner: ejecutar codigo */
     "code-runner.runInTerminal": true,
     "code-runner.saveAllFilesBeforeRun": true,
-    "editor.bracketPairColorization.enabled": true,
-    "editor.cursorBlinking": "expand",
+
+    /* estilos de VS Code: temas, colores, etc  */
+    "editor.tokenColorCustomizations": {
+        "comments": "#e67e22"
+    },
+    "workbench.colorCustomizations": {
+        "[Material Theme Ocean High Contrast]": {},
+        "editorLineNumber.activeForeground": "#E34234",
+        "editorLineNumber.foreground": "#FFFFFF"
+    },
+    "editor.renderWhitespace": "all",
+    "editor.stickyScroll.enabled": true,
+    "editor.parameterHints.enabled": true,
+    "editor.minimap.enabled": false,
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorWidth": 4,
     "editor.fontFamily": "'Fira Code', menlo",
     "editor.fontLigatures": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.cursorBlinking": "expand",
+    "editor.wordBasedSuggestions": "matchingDocuments",
     "editor.guides.bracketPairs": "active",
     "editor.guides.bracketPairsHorizontal": true,
-    "editor.linkedEditing": true,
-    "editor.minimap.enabled": false,
-    "editor.parameterHints.enabled": true,
+    "editor.guides.highlightActiveBracketPair": true,
+    "editor.guides.highlightActiveIndentation": true,
+    "workbench.colorTheme": "Tokyo Night",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.tree.enableStickyScroll": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "workbench.activityBar.location": "hidden",
+
+    /* Git y GitHub */
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": true
+    },
+    "gitlens.views.branches.branches.layout": "list",
+    "git-graph.integratedTerminalShell": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "git.autofetch": true,
+
+    /* Autocompletado de JavaScript, TypeScript y React */
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.sort.json": "always",
+        "source.sortImports": "explicit"
+    },
     "editor.quickSuggestions": {
         "comments": false,
         "other": true,
         "strings": true
     },
-    "editor.quickSuggestionsDelay": 1,
-    "editor.renderWhitespace": "all",
-    "editor.stickyScroll.enabled": true,
-    "workbench.tree.enableStickyScroll": true,
-    "editor.suggest.preview": true,
+    "editor.linkedEditing": true,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "on",
-    /* estilos de VS Code: temas, colores, etc  */
-    "editor.tokenColorCustomizations": {
-        "comments": "#e67e22"
-    },
-    "editor.wordBasedSuggestions": "matchingDocuments",
-    "editor.wordBasedSuggestionsMode": "allDocuments",
+    "editor.quickSuggestionsDelay": 1,
+    "editor.suggest.preview": true,
+    "tabnine.experimentalAutoImports": true,
+    "console-ninja.featureSet": "Community",
+    //"typescript.suggest.completeFunctionCalls": true,
+    "intellicodeCompletions.language.javascript": true,
+    "intellicodeCompletions.language.typescript": true,
+    // "typescript.inlayHints.enumMemberValues.enabled": true,
+    // "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    // "typescript.inlayHints.parameterNames.enabled": "all",
+    // "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+    // "typescript.inlayHints.parameterTypes.enabled": true,
+    // "typescript.inlayHints.variableTypes.enabled": true,
+    "javascript.suggest.completeFunctionCalls": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "js/ts.implicitProjectConfig.checkJs": true,
+
+    /* emmet */
     "emmet.includeLanguages": {
         "javascript": "javascriptreact",
         "jsx-sublime-babel-tags": "javascriptreact",
         "typescript": "typescriptreact"
     },
     "emmet.triggerExpansionOnTab": true,
+
+    /* eslint */
     "eslint.options": {
         "extensions": [
             ".js",
@@ -116,55 +179,7 @@
         "javascriptreact",
         "typescriptreact"
     ],
-    /* Otros */
-    "files.hotExit": "off",
-    "git-graph.integratedTerminalShell": "C:\\Program Files\\Git\\bin\\bash.exe",
-    "git.autofetch": true,
-    /* Git y GitHub */
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": true
-    },
-    "gitlens.views.branches.branches.layout": "list",
-    "headwind.prependCustomClasses": true,
-    //"typescript.suggest.completeFunctionCalls": true,
-    "intellicodeCompletions.language.javascript": true,
-    "intellicodeCompletions.language.typescript": true,
-    // "typescript.inlayHints.enumMemberValues.enabled": true,
-    // "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-    // "typescript.inlayHints.parameterNames.enabled": "all",
-    // "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
-    // "typescript.inlayHints.parameterTypes.enabled": true,
-    // "typescript.inlayHints.variableTypes.enabled": true,
-    "javascript.suggest.completeFunctionCalls": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "js/ts.implicitProjectConfig.checkJs": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit",
-        "source.sortImports": "explicit"
-    },
-    "json.sortOnSave.enable": true,
-    "liveServer.settings.donotShowInfoMsg": true,
-    "prettier.arrowParens": "always",
-    "prettier.bracketSameLine": false,
-    "prettier.bracketSpacing": true,
-    /* Prettier: formateador de codigo */
-    "prettier.editor.defaultFormatter": "esbenp.prettier-vscode",
-    "prettier.embeddedLanguageFormatting": "auto",
-    "prettier.htmlWhitespaceSensitivity": "css",
-    "prettier.insertPragma": false,
-    "prettier.jsxSingleQuote": true,
-    "prettier.printWidth": 100,
-    "prettier.proseWrap": "preserve",
-    "prettier.quoteProps": "as-needed",
-    "prettier.requirePragma": false,
-    "prettier.semi": true,
-    "prettier.singleQuote": true,
-    "prettier.tabWidth": 2,
-    "prettier.trailingComma": "es5",
-    "prettier.useTabs": false,
-    "prettier.vueIndentScriptAndStyle": false,
-    /* Autocompletado de JavaScript, TypeScript y React */
-    "tabnine.experimentalAutoImports": true,
+
     /* Tailwind */
     "tailwindCSS.emmetCompletions": true,
     "tailwindCSS.includeLanguages": {
@@ -174,21 +189,15 @@
         "typescript": "typescript",
         "typescriptreact": "typescriptreact"
     },
+    "headwind.prependCustomClasses": true,
+
+    /* Otros */
+    "files.hotExit": "off",
     "terminal.explorerKind": "external",
     "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "typescript.npm": "C:\\Program Files\\nodejs\\npm.cmd",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "workbench.colorCustomizations": {
-        "[Material Theme Ocean High Contrast]": {},
-        "editorLineNumber.activeForeground": "#E34234",
-        "editorLineNumber.foreground": "#FFFFFF"
-    },
-    "workbench.colorTheme": "Material Theme Ocean High Contrast",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.activityBar.location": "hidden",
     "terminal.integrated.env.windows": {},
-    "console-ninja.featureSet": "Community",
-    "window.zoomLevel": 1,
+    "typescript.npm": "C:\\Program Files\\nodejs\\npm.cmd",
+    "liveServer.settings.donotShowInfoMsg": true,
 }
 ```
 

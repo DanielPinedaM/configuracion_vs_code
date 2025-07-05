@@ -180,6 +180,7 @@
     "prettier.vueIndentScriptAndStyle": false,
     "tabnine.experimentalAutoImports": true,
     /* Tailwind */
+    "tailwindCSS.experimental.configFile": "src/styles/global/tailwind.css", /* cambiar por la ruta donde se importa Tailwind 4 en archivo .css, necesario para q funcione auto-completado en Tailwind 4 */
     "tailwindCSS.emmetCompletions": true,
     "tailwindCSS.includeLanguages": {
         "javascript": "javascript",

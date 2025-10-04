@@ -69,7 +69,14 @@
     "code-runner.saveAllFilesBeforeRun": true,
     "console-ninja.featureSet": "Community",
     "editor.bracketPairColorization.enabled": true,
-    /* Autocompletado de JavaScript, TypeScript y React */
+  
+    /* Autocompletado de JavaScript, TypeScript, React y terminal */
+    "terminal.integrated.suggest.enabled": true,
+    "editor.snippetSuggestions": "inline",
+    "editor.acceptSuggestionOnEnter": "on",
+    "javascript.suggest.paths": true,
+    "typescript.suggest.paths": true,
+    "editor.tabCompletion": "on",
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": "explicit",
         "source.sort.json": "always",
@@ -92,12 +99,12 @@
         "other": true,
         "strings": true
     },
+    "editor.selectionHighlight": true,
     "editor.quickSuggestionsDelay": 1,
     "editor.renderWhitespace": "all",
     "editor.stickyScroll.enabled": true,
     "editor.suggest.preview": true,
     "editor.suggestSelection": "first",
-    "editor.tabCompletion": "on",
     /* estilos de VS Code: temas, colores, etc  */
     "editor.tokenColorCustomizations": {
         "comments": "#e67e22"
